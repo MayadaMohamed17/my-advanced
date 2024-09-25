@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Advanced Blog</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>My Advanced Blog</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link text-white" href="#">Home</a>
+            <a class="nav-link text-white" href="#">About</a>
+            <a class="nav-link text-white" href="#">Contact</a>
+            <a class="nav-link text-white" href="#">Portfolio</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Blog Posts Section -->
+            <section class="col-md-8">
+                <article class="post card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">First Advanced Article Title</h2>
+                        <p class="card-text">This is some sample text for the first article. The full content of the article could be displayed here. Feel free to add more content and style it as needed.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+                <article class="post card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Second Advanced Article Title</h2>
+                        <p class="card-text">This is some sample text for the second article. The full content of the article could be displayed here. Experiment with different layouts and design enhancements.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+                <article class="post card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Third Advanced Article Title</h2>
+                        <p class="card-text">This is some sample text for the third article. Challenge yourself to add more features and make the blog more interactive and user-friendly.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sidebar Section -->
+            <aside class="col-md-4">
+                <div class="sidebar card mb-4">
+                    <div class="card-body">
+                        <h3>About the Blog</h3>
+                        <p>This blog is more advanced, requiring enhancements and restructuring. Consider adding more sections and making it dynamic with JavaScript.</p>
+                    </div>
+                </div>
+                <div class="sidebar card mb-4">
+                    <div class="card-body">
+                        <h3>Recent Posts</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">How to Improve Your Blog</a></li>
+                            <li><a href="#">Understanding CSS Grid</a></li>
+                            <li><a href="#">10 JavaScript Tips and Tricks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>All Rights Reserved © 2024 | Designed by [Your Name]</p>
+        <form class="d-inline-flex">
+            <input type="text" class="form-control me-2" placeholder="Your email" />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <button id="back-to-top" class="btn btn-secondary mt-3">Back to Top</button>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for "Back to Top" Button -->
+    <script>
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.onscroll = () => {
+            if (window.scrollY > 200) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+        backToTopBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+
+</html>

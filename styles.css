@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #343a40;
+    --light-color: #f8f9fa;
+    --font-color: #666;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
